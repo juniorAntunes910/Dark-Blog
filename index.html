@@ -4,11 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meu Blog</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <header>
-      <div id="logo">
-        <h1 class="logo">Dark Blog</h1>
+      <div id="logo" class="container">
+        <h1 class="logo">DARK BLOG</h1>
         <nav id="main-menu">
           <ul>
             <li><a href="#">Home</a></li>
@@ -22,14 +24,299 @@
 
     <main>
       <section id="hero">
-            <div class="overlay">
-                <div id="hero-content" class="container">
-                    <h2></h2>
-                </div>
+          <div id="hero-content" class="container">
+            <h2>Dont you dare be a Hollow</h2>
+            <p>
+              Cada derrota é uma lição. Cada tentativa, um passo contra a
+              escuridão.
+            </p>
+            <div id="hero-buttons">
+              <a href="#" class="hero-btn">Ver Personagens</a>
+              <a href="#" class="hero-btn">Ver Mapas</a>
             </div>
+        </div>
+      </section>
+
+      <section id="main-content">
+        <section id="maps">
+          <div class="card-blog-title">
+            <h2>Mapas de Dark souls</h2>
+            <p>
+              Mapas interligados, sombrios e cheios de segredos. Cada caminho
+              leva a um desafio… ou a algo pior.
+            </p>
+          </div>
+
+          <div id="map-cards">
+            <!-- Firelink Shrine - Mapa Card -->
+            <div class="map-card">
+              <img
+                src="Assets/Firelink_Shrine.webp"
+                alt="Imagem de firelink Shrine alta qualidade, personagem cebolao esta perto da fogueira"
+              />
+              <div class="card-content">
+                <div class="card-header">
+                  <h3 class="card-title">Firelink Shrine</h3>
+                </div>
+                <div class="card-description container">
+                  <p>
+                    A Firelink Shrine é o refúgio central de Dark Souls: um
+                    santuário em ruínas onde caminhos se conectam, NPCs se
+                    encontram e a chama da jornada é mantida acesa. É o único
+                    lugar que transmite paz… antes de você voltar para a
+                    escuridão.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Blighttown - Mapa Card -->
+            <div class="map-card">
+              <img
+                src="Assets/Blight_Town.webp"
+                alt="Imagem de blight Town alta qualidade, Jogador esta se aventurando pelo mapa, andando pelos andaimes de madeira"
+              />
+              <div class="card-content">
+                <div class="card-header">
+                  <h3 class="card-title">Blighttown</h3>
+                </div>
+                <div class="card-description">
+                  <p>
+                    Um abismo de madeira podre, veneno e desespero. Em
+                    Blighttown, cada passo é uma luta pela sobrevivência — e a
+                    queda é quase sempre certa.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Ash Lake - Mapa Card -->
+            <div class="map-card">
+              <img
+                src="Assets/Ash_Lake.jfif"
+                alt="Imagem de Ash Lake alta qualidade, personagem principal esta perto da fogueira"
+              />
+              <div class="card-content">
+                <div class="card-header">
+                  <h3 class="card-title">Ash Lake</h3>
+                </div>
+                <div class="card-description">
+                  <p>
+                    Um oceano eterno sob raízes colossais. Silencioso, ancestral
+                    e quase esquecido pelo mundo acima — é aqui que os
+                    verdadeiros buscadores encontram o caminho dos dragões.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="pers"></section>
+        <div class="card-blog-title">
+          <h2>Personagens de Dark souls</h2>
+          <p>
+            Em um mundo à beira do fim, nem todos os encontros trazem inimigos.
+            Entre ruínas e fogueiras, alguns viajantes seguem seus próprios
+            caminhos — uns honrados, outros… nem tanto.
+          </p>
+        </div>
+        <div id="pers-cards">
+          <!--- Personagem Cebolao-->
+          <div class="pers-card">
+            <img
+              src="Assets/cebolao.png"
+              alt="Imagem do cavaleiro Sigvard de Catarina mais conhecido como cebolao, tomando uma bebida"
+            />
+            <div class="card-content">
+              <div class="card-header">
+                <h3 class="card-title">Siegmeyer de Catarina - Cebolão</h3>
+              </div>
+              <div class="card-description">
+                <p>
+                  Um cavaleiro gentil e determinado, sempre em busca de superar
+                  seus próprios desafios — mesmo quando a coragem vem
+                  acompanhada de dúvida.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!--- Personagem Solaire-->
+          <div class="pers-card">
+            <img
+              src="Assets/solaire.jpg"
+              alt="Imagem do cavaleiro Solaire de Astora conhecido por rezar para sol , olhando para o horizonte"
+            />
+            <div class="card-content">
+              <div class="card-header">
+                <h3 class="card-title">Solaire of Astora</h3>
+              </div>
+              <div class="card-description">
+                <p>
+                  Um guerreiro otimista que busca seu próprio sol em um mundo
+                  dominado pela escuridão. Sua fé, coragem e companheirismo
+                  fazem dele um dos aliados mais memoráveis da jornada.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!--- Personagem Patches-->
+          <div class="pers-card">
+            <img
+              src="Assets/patches.png"
+              alt="Imagem do cavaleiro Patches, personagem traidor sentado"
+            />
+            <div class="card-content">
+              <div class="card-header">
+                <h3 class="card-title">Patches</h3>
+              </div>
+              <div class="card-description">
+                <p>
+                  Um trapaceiro oportunista que prefere empurrar os outros para
+                  o perigo antes de enfrentá-lo. Confiar nele é sempre um risco
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sidebar">
+        <div id="Sidebar-Video">
+          <h3 class="sidebar-title">Começando Bem</h3>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/GAPAowgX_Sg?si=q5tOceeeRIn3Pr2A"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="sidebar-content">
+          <p>
+            Neste vídeo, a jornada por Dark Souls é apresentada muito além da
+            dificuldade. A narrativa explora o mundo em ruínas, seus personagens
+            marcantes e a mensagem central do jogo: persistência. Entre
+            derrotas, descobertas e momentos de superação, o vídeo mostra que
+            Dark Souls não é apenas sobre morrer — é sobre aprender, evoluir e
+            nunca desistir, mesmo quando tudo parece perdido.
+          </p>
+        </div>
+      </section>
+
+      <section id="comments">
+        <div class="comments-title">
+          <h2>Comentários</h2>
+        </div>
+        <div id="comments-box">
+          <!--Comentario Undead-->
+          <div class="comment-card">
+            <p class="comment-text">
+              "Eu comecei Dark Souls achando que era só um jogo difícil, mas ele
+              é muito mais que isso. Cada mapa parece ter sido pensado nos
+              mínimos detalhes, e a sensação de abrir um atalho e perceber como
+              tudo está conectado é absurda. É frustrante às vezes? Sim. Mas a
+              recompensa faz tudo valer a pena."
+            </p>
+            <div class="comment-person">
+              <img
+                src="Assets/icon-hollow-comment.webp"
+                alt="Imagem do icone do UndeadWarrior"
+              />
+            </div>
+            <div class="commente-identification">
+              <h4>UndeadWarrior</h4>
+              <p>Visitou o site em 2026</p>
+            </div>
+          </div>
+          <!--Comentario Lord-->
+          <div class="comment-card">
+            <p class="comment-text">
+              "Blighttown quase me fez desistir, não vou mentir. Veneno, queda,
+              inimigo saindo de todo canto… mas quando finalmente derrotei o
+              chefe e avancei na história, foi uma das melhores sensações que já
+              tive em um jogo. Dark Souls testa sua paciência e sua
+              determinação."
+            </p>
+            <div class="comment-person">
+              <img
+                src="Assets/icon-guyn-comment.webp"
+                alt="Imagem do icone de Ashen soul"
+              />
+            </div>
+            <div class="commente-identification">
+              <h4>LordOfCinder</h4>
+              <p>Visitou o site em 2026</p>
+            </div>
+          </div>
+          <!--Comentario Ashen-->
+          <div class="comment-card">
+            <p class="comment-text">
+              "O que mais me marcou não foi nem a dificuldade, mas a atmosfera.
+              A solidão, os NPCs com histórias tristes, a trilha sonora
+              minimalista… tudo passa uma sensação de mundo decadente que poucos
+              jogos conseguem transmitir."
+            </p>
+            <div class="comment-person">
+              <img src="Assets/icon-frampt-comment.webp" alt="Icone do Ashen" />
+            </div>
+            <div class="commente-identification">
+              <h4>UndeadWarrior</h4>
+              <p>Visitou o site em 2026</p>
+            </div>
+          </div>
+          <!--Comentario Praisen-->
+          <div class="comment-card">
+            <p class="comment-text">
+              "Solaire é simplesmente um dos melhores personagens já criados. Em
+              um mundo tão sombrio, ele traz esperança. Dark Souls me ensinou
+              que cair faz parte do processo — o importante é não ficar no chão.
+              Don’t you dare go Hollow!"
+            </p>
+            <div class="comment-person">
+              <img
+                src="Assets/Icon-solaire-comments.webp"
+                alt="Icone do Solaire"
+              />
+            </div>
+            <div class="commente-identification">
+              <h4>PraiseTheSunBR</h4>
+              <p>Visitou o site em 2026</p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
-
-    <footer></footer>
+    <footer>
+      <section id="main-footer">
+        <section id="footer-about">
+          <h3 class="logo">Dark Blog</h3>
+          <p id="footer-about-description">
+            Um blog sobre dark souls feito por junior
+          </p>
+        </section>
+        <section id="footer-links">
+          <h4 class="footer-titles">Links rápidos</h4>
+          <nav id="footer-menu">
+            <ul>
+              <li>Home</li>
+              <li>Artigos</li>
+              <li>Sobre</li>
+              <li>Contato</li>
+            </ul>
+          </nav>
+        </section>
+      </section>
+      <section id="copyrights">
+        <p id="copyrights">
+          © 2025 Dark Blog. Todos os direitos reservados.
+        </p>
+      </section>
+    </footer>
   </body>
 </html>

@@ -1,5 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0b0b0b;
+  color: whitesmoke;
+}
+
+@font-face {
+  font-family: "DarkSouls";
+  src: url("fonts/OptimusPrinceps.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.logo {
+  font-family: "DarkSouls", serif;
+}
+
+header {
+  background-color: #0b0b0b;
+}
+header a,
+header #logo {
+  color: #e5e5e5;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+}
+
+#hero {
+  display: flex;
+  height: 50vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(Assets/imagem-hero.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  color: #fafafa;
+  align-items: center;
+  text-align: center;
+}
+
+#hero-content h2 {
+  font-family: "Oswald", serif;
+}
+#hero-content p {
+  font-family: "Inter", sans-serif;
+}
+
+#hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 1.5rem;
+}
+
+.hero-btn {
+  font-family: "Inter" sans-serif;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  color: white;
+  border: 2px solid whitesmoke;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3 ease;
+}
+
+.hero-btn:hover {
+  background-color: #0b0b0b;
+}
+
+.card-blog-title {
+  text-align: center;
+  margin-top: 2rem;
+  background-color: #0b0b0bc0;
+  margin-bottom: 2rem;
+}
+
+#map-cards {
+  display: flex;
+  margin: 3rem;
+  padding: 3rem;
+  background-color: #11111169;
+  justify-content: space-around;
+}
+
+.map-card {
+  width: 300px;
+  background-color: #292828;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card-title{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.map-card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+.card-description{
+    margin-bottom: 2rem;
 }
