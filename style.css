@@ -5,14 +5,27 @@
   box-sizing: border-box;
 }
 
+#main-grid {
+  display: flex;
+}
+
+#main-content {
+  flex: 3;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #0b0b0b;
   color: whitesmoke;
-  font-family: "Inter" serif;
+  font-family: "Inter", serif;
+  font-weight: 300;
 }
 
 @font-face {
-  font-family: "DarkSouls";
+  font-family: "DarkSouls", serif;
   src: url("fonts/OptimusPrinceps.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
@@ -24,6 +37,7 @@ body {
 
 .logo {
   font-family: "DarkSouls", serif;
+  font-size: 2rem;
 }
 
 header {
@@ -83,18 +97,28 @@ nav ul {
 }
 
 .hero-btn {
-  font-family: "Inter" sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   padding: 0.5rem 1rem;
   color: white;
   border: 2px solid whitesmoke;
   border-radius: 0.5rem;
   cursor: pointer;
-  transition: all 0.3 ease;
+  transition: all 0.3s ease;
+  display: inline-block;
+  background: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .hero-btn:hover {
   background-color: #0b0b0b;
+  color: #ffe082;
+}
+
+.hero-btn a {
+  color: white;
 }
 
 .card-blog-title {
@@ -110,19 +134,20 @@ nav ul {
   padding: 3rem;
   background-color: #11111169;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .map-card {
-  width: 400px;
+  width: 30%;
   background-color: #292828;
   border-radius: 0.5rem;
   overflow: hidden;
   text-align: center;
 }
 
-.card-title{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+.card-title {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .map-card img {
@@ -131,44 +156,184 @@ nav ul {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
 }
-.card-description{
-    margin-bottom: 2rem;
+.card-description {
+  margin-bottom: 2rem;
 }
 
-.pers-card{
-    width: 400px;
-    background-color: #292828;
-    border-radius: 0.5rem;
-    overflow: hidden;
-    text-align: center;
+.pers-card {
+  width: 30%;
+  background-color: #292828;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  text-align: center;
 }
 
-#pers-cards{
-    display: flex;
-    margin: 3rem;
-    padding: 3rem;
-    background-color: #11111169;
-    justify-content: space-around;
+#pers-cards {
+  display: flex;
+  margin: 3rem;
+  padding: 3rem;
+  background-color: #11111169;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
-.pers-card img{
-    max-width: 100%;
-    height: 220px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-}
-
-.quebra{
-    display: block;
+.pers-card img {
+  max-width: 100%;
+  height: 220px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
 }
 
-#sidebar{
-    flex:1;
-    gap: 2rem;
-    padding: 2rem;
+.card-access {
+  padding: 1rem 1rem;
+  border: 2px solid whitesmoke;
 }
 
+.card-content .hero-btn {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.quebra {
+  display: block;
+}
+
+#sidebar {
+  display: flex;
+  flex: 1;
+  gap: 2rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.sidebar-title {
+  font-family: "DarkSouls", serif;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.sidebar-content {
+  margin: 2rem 2rem 2rem;
+}
+
+#sidebar-video {
+  background-color: rgb(29, 27, 27);
+  width: 110%;
+  height: 89%;
+}
+
+#video iframe {
+  width: 100%;
+  aspect-ratio: 16 /9;
+  height: auto;
+  position: relative;
+}
+
+#comentarios {
+  padding: 4rem 0;
+  background-color: rgb(29, 27, 27);
+}
+
+.comment-card {
+  padding: 4rem;
+}
+
+.comment-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.comment-title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.comment-person img {
+  border-radius: 100%;
+  width: 75px;
+}
+
+footer {
+  background-color: #292828;
+  padding: 4rem 0 2rem 0;
+  gap: 2rem;
+}
+
+#main-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+#footer-about {
+  flex: 1;
+  margin-top: 1rem;
+}
+
+#footer-about h3 {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+#footer-about-description {
+  max-width: 80%;
+  margin-bottom: 2rem;
+}
+
+#footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+#footer-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+#footer-menu a {
+  color: #fafafa;
+}
+
+#copyrights {
+  display: flex;
+  justify-content: center;
+}
+
+#footer-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer-img img {
+  border-radius: 75%;
+  width: 18%;
+}
+#artigo-firelink {
+  margin-top: 5rem;
+}
+
+.img-firelink {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.img-firelink img{
+  width: 50%;
+}
+
+#sidebar-video-firelink {
+  background-color: rgb(29, 27, 27);
+  width: 110%;
+  height: 100%;
+}
