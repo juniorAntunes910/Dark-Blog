@@ -334,6 +334,20 @@ footer {
 
 #sidebar-video-firelink {
   background-color: rgb(29, 27, 27);
-  width: 110%;
-  height: 100%;
+  width: 100%;
+  height: 48%;
+}
+
+#npcs{
+  margin-top: 1rem;
+}
+
+#fim-artigo{
+  margin-bottom: 2rem;
+}
+
+#sidebar-video-blightown{
+   background-color: rgb(29, 27, 27);
+  width: 100%;
+  height: 40%;
 }
