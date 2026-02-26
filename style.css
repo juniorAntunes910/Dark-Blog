@@ -110,6 +110,8 @@ nav ul {
   margin-top: 1rem;
   margin-bottom: 1rem;
   text-align: center;
+  display: inline-flex;
+  align-items: center;
 }
 
 .hero-btn:hover {
@@ -132,9 +134,15 @@ nav ul {
   display: flex;
   margin: 3rem;
   padding: 3rem;
+  gap: 2rem;
   background-color: #11111169;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+.map-card, .pers-card{
+  flex: 1 1 300px;
+  max-width: 350px;
 }
 
 .map-card {
@@ -143,11 +151,6 @@ nav ul {
   border-radius: 0.5rem;
   overflow: hidden;
   text-align: center;
-}
-
-.map-card, .pers-card{
-  flex: 1 1 300px;
-  max-width: 350px;
 }
 
 .card-title {
@@ -180,6 +183,7 @@ nav ul {
   display: flex;
   margin: 3rem;
   padding: 3rem;
+  gap: 2rem;
   background-color: #11111169;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -197,6 +201,10 @@ nav ul {
 .card-access {
   padding: 1rem 1rem;
   border: 2px solid whitesmoke;
+}
+
+.card-content {
+  padding: 0.5rem;
 }
 
 .card-content .hero-btn {
@@ -339,43 +347,88 @@ footer {
 
 #sidebar-video-firelink {
   background-color: rgb(29, 27, 27);
-  width: 100%;
-  height: 48%;
+  width: 110%;
+  height: 100%;
 }
 
-#npcs{
-  margin-top: 1rem;
+
+.card-description i{
+  font-size: 18px;
+  margin-left: 7rem;
+}
+.card-description p{
+  font-weight: 500;
+  font-size: 1rem;
 }
 
-#fim-artigo{
-  margin-bottom: 2rem;
+
+@media (max-width: 768px) {
+  #main-grid{
+    flex-direction: column;
+  }
+  
+  #sidebar-video iframe{
+    width: 100%;
+  }
+  .comment-box{
+    flex-direction: column;
+  }
+
+  
+  #logo{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #main-menu{
+    display: none;
+  }
+
 }
 
-#sidebar-video-blightown{
-   background-color: rgb(29, 27, 27);
-  width: 100%;
-  height: 40%;
+@media (max-width: 1024px){
+  #main-grid{
+    flex-direction: column;
+  }
+  #main-content{
+    flex: none;
+    width: 100%;
+  }
+
+  #sidebar{
+    flex: none;
+    width: 100%;
+  }
+
+  #main-footer{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #footer-about .logo{
+    text-align: center;
+  }
+
+  #footer-about-description{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 2rem;
+  }
+  
+  .comment-text{
+    text-align: justify;
+    margin-left: 0.3rem;
+  }
+
+  .commente-identification{
+    text-align: center;
+  }
 }
-#sidebar-video-cebolao{
-   background-color: rgb(29, 27, 27);
-  width: 100%;
-  height: 35%;
-}
-#sidebar-video-ash-lake{
-  background-color: rgb(29, 27, 27);
-  width: 100%;
-  height: 45%;
-}
-#sidebar-video-solaire{
-    background-color: rgb(29, 27, 27);
-  width: 100%;
-  height: 38%;
-}
-#sidebar-video-patches{
-  background-color: rgb(29, 27, 27);
-  width: 100%;
-  height: 45%;
-}
-.card-description-sobre{
-  margin-top: 3rem;
-}
+  .comment-person img{
+    margin-left: 5.20rem;
+  }
+  
+  #footer-links{
+    margin-bottom: 2rem;
+  }
